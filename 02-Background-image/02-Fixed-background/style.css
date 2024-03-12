@@ -1,14 +1,22 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+	box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+	box-sizing: inherit;
+}
 
 body {
+	background-image: url(images/vzor.png);
 	padding: 0 10%;
 	font: 24px/1.5 sans-serif;
 }
 
 .box {
-	height: 500px;
+	height: 50px;
 	margin: 50px 0;
 	border: 1px dashed grey;
 	background-color: white;
@@ -18,3 +26,8 @@ body {
 
 
 
+.box {
+	background-image: url(images/vysoke.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}

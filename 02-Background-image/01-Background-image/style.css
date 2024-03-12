@@ -1,6 +1,13 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+	box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+	box-sizing: inherit;
+}
 
 
 .box {
@@ -13,4 +20,16 @@ html { box-sizing: border-box; }
 /* ------------------------------------ */
 
 
+.box {
+	background-color: rgb(201, 201, 207);
+	background-image: url(images/siroke.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
 
+/* zkrácená verze pro zápis */
+
+/* background: blue  url('../path/to/img') no-repeat right / cover ; 
+
+Pokud nenastavím nic, vychází se z původní automatické pozice nastavení */
